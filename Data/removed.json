@@ -1,0 +1,16 @@
+{
+  "tasks-removed": [
+    {
+      "task": "Sweep the floor",
+      "id": 1
+    },
+    {
+      "task": "Wash the dishes",
+      "id": 2
+    },
+    {
+      "todo": "sadas",
+      "id": 3
+    }
+  ]
+}

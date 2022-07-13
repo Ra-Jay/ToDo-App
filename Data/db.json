@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "task": "Sweep the floor",
+      "id": 1
+    },
+    {
+      "task": "Wash the dishes",
+      "id": 2
+    },
+    {
+      "task": "Clean the bathroom",
+      "id": 3
+    },
+    {
+      "task": "Mop the floor",
+      "id": 4
+    }
+  ]
+}
