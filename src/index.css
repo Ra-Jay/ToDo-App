@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.body, html {
+  background-color: #a6a6a6;
+}
+
+.App  {
+  background-color: #fff;
+  margin: 20px auto;
+  min-height: 100vh;
+  text-align: center;
+  width: 35%;
+}
+
+.header {
+  background: url(/public/todo-bg1.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  position: relative;
+}
+
+.header h1 {
+  bottom: 10px;
+  color: #fff;
+  left: 10px;
+  position: absolute;
+}
+
+.home {
+  position: relative;
+}
+
+/* Input design */
+.new-task{
+  border: 1px solid #B7673C;
+  border-radius: 5px;
+  display: flex;
+  margin: 30px 20px ;
+}
+
+.input, .add-task {
+  border: 0;
+  min-height: 50px;
+}
+
+.input {
+  border-radius: 5px;
+  padding-left: 20px;
+  flex: 80%;
+}
+
+.add-task {
+  background-color: #B7673C;
+  color: #fff;
+  cursor: pointer;
+  flex: 16%;
+}
+
+.add-task:active{
+  background-color: rgb(138, 69, 32);
+}
+/* Tasks design */
+.tasks {
+  height: 300px;
+  overflow-x: hidden;
+}
+
+.task p {
+  flex: 80%;
+  font-size: 1rem;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.task {
+  align-items: center;
+  border-bottom: 1px solid #B7673C;
+  display: flex;
+  height: 40px;
+  margin: 10px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.edit-task {
+  border: 0;
+  color: red;
+  display: none;
+  font-size: 1rem;
+  padding: 5px 30px;
+}
+
+.button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 36px;
+  height: 100%;
+  position: absolute;
+}
+
+.edit, .edit-clicked {
+  background-color:  #00B5E2;
+  right: 36px;
+  bottom: -40px;
+}
+
+.delete {
+  background-color: red;
+  right: 0;
+  top: -40px;
+}
+
+.history {
+  bottom: -30px;
+  color: #B7673C;
+  left: 40%;
+  position: absolute;
+  right: 40%;
+  text-decoration: none;
+  width: 20%;
+}
+
+/* Trash Bin design */
+
+.trash-bin {
+  margin: 20px;
+  width: 100%;
+}
+
+.trash-bin-header {
+  align-items: center;
+  display: flex;
+  width: 90%;
+}
+
+.title {
+  font-size: 30px;
+  margin: 0 auto 0 20px;
+}
+
+.back {
+  background-color: #fff;
+  border: 0;
+  color: #B7673C;
+  cursor: pointer;
+}
+
+.history-buttons {
+  /* position: relative; */
+}
+
+.restore {
+  color: #00B5E2;
+  cursor: pointer;
+  /* position: absolute; */
+}
+
+.remove-permanently {
+  color: red;
+  cursor: pointer;
+  margin: 0 0 0 20px;
+  /* position: absolute; */
+}
+
+.deleted-item {
+  margin: 0;  
+  width: 90%;
+}
