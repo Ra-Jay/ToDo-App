@@ -5,20 +5,18 @@ import TaskList from "./TaskList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    const [tasks, setTasks] = useState(null);
-    const { data: task, setData: setTodo, isPending, error} = useFetch('http://localhost:8000/tasks');
-
-    useEffect(()=> {
-        if(task) setTodo(task);
-        console.log(task);
-    }, [task])
+    const { data: todo, setData: setTodo, isPending, error} = useFetch('http://localhost:8000/tasks');
 
     return (
         <div className="home">
             <AddTask setTodo={setTodo} />
+
             { error && <div>Failed to fetch data.</div> }
+
             { isPending && <div>Loading...</div> }
-            { task && <TaskList task={task} /> }
+
+            { todo && <TaskList todo={todo} setTodo={setTodo} isPending={isPending} /> }
+            
             <Link to="/trashbin" className="history">
                 View History
             </Link>
